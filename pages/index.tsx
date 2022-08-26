@@ -19,7 +19,6 @@ const Home: NextPage = () => {
   const [isError, setIsError] = useState(false);
   const [stopFunc, setStopFunc] = useState<any>();
 
-  console.log(data);
   return (
     <div className={styles.container}>
       <div>
