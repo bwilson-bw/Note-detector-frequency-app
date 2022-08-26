@@ -10,6 +10,7 @@ const MIDI = 69; // the MIDI note number of A4
 const A = 2 ** (1 / 12); // the twelth root of 2 = the number which when multiplied by itself 12 times equals 2 = 1.059463094359...
 const C0_PITCH = 16.35; // frequency of lowest note: C0
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (frequency) => {
   const N = Math.round(12 * Math.log2(frequency / CONCERT_PITCH)); // the number of half steps away from the fixed note you are. If you are at a higher note, n is positive. If you are on a lower note, n is negative.
   const Fn = CONCERT_PITCH * A ** N; // the frequency of the note n half steps away of concert pitch

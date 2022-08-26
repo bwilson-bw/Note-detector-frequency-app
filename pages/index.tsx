@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 import { freelizer } from "./freelizer/index";
-import DataScreen from "./dataScreen";
+import DataScreen from "./DataScreen";
 
 import styles from "../styles/Home.module.css";
 
